@@ -5,13 +5,13 @@
 
 Примечание: вводимые директории должны заканчиваться на \ 
 
-#include < dirent.h >
-#include < errno.h >
-#include < math.h >
-#include < stdio.h >
-#include < stdlib.h >
-#include < string.h >
-#define MY_DIRENT struct my_dirent
+ #include < dirent.h >
+ #include < errno.h >
+ #include < math.h >
+ #include < stdio.h >
+ #include < stdlib.h >
+ #include < string.h >
+ #define MY_DIRENT struct my_dirent
 
 MY_DIRENT
 {char file_name[100];
