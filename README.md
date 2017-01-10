@@ -162,7 +162,7 @@ else
 }                                                     
                                                        
                                                   
-if ((sum_of_similar_files/sum1*100)<95)                                         
+if ((sum_of_similar_files/sum1*100)<95)                                                                                      
 {                                                                 
     printf("\nDirectories aren`t similar \n");                                             
     return 0;                                                          
