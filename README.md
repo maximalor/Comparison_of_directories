@@ -138,17 +138,17 @@ if (sum2>sum1)
   sum1=sum2;                                            
   sum2=sum_of_similar_files;                                                     
 }                                                         
-sum_of_similar_files=0;                                                                              
-                                             
-if ((sum2/sum1*100)<95)                                                                                                             
-{                                                                                               
-    printf("\nDirectories aren`t similar \n");                                                                                        
-    return 0;                                                                                       
-}                                                                                      
-else                                          
-{while(p1)                                              
-  {head=p2;                                               
-   while(head)                                               
+sum_of_similar_files=0;                                                                                                           
+                                                                                  
+if ((sum2/sum1*100)<95)                                                                                                                 
+{                                                                                                                                    
+    printf("\nDirectories aren`t similar \n");                                                                                           
+    return 0;                                                                                                                          
+}                                                                                                                             
+else                                                                    
+{while(p1)                                                                 
+  {head=p2;                                                              
+   while(head)                                                                 
      {                                                      
        if(proverka(p1,head)==1)                                                
          {strcpy(head->file_name,"");                                        
@@ -162,7 +162,7 @@ else
 }                                                     
                                                        
                                                   
-if ((sum_of_similar_files/sum1*100)<95)                                                                                               
+if ((sum_of_similar_files/sum1*100)<95)                                                                                                 
 {                                                                                                                              
     printf("\nDirectories aren`t similar \n");                                                                      
     return 0;                                                                         
