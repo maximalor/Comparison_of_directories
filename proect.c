@@ -29,23 +29,6 @@ MY_DIRENT*Add(MY_DIRENT *p,char d_name[100],char name_of_d[100])
  return head;
 }
 
-MY_DIRENT*udalenie(MY_DIRENT*p)
-{MY_DIRENT*head;
-  head=p->back;
-  if((head)&&(p->next)){
-   p->back->next=p->next;
-   p->next->back=p->back;
-  }
-  if((!head)&&(p->next)){
-   p->next->back=NULL;
-  }
-  if((head)&&(!(p->next))){
-   p->back->next=NULL;
-  }
-  free(p);
-  return head;
-}
-
 int proverka(MY_DIRENT*p1,MY_DIRENT*p2)
 {FILE *f1,*f2;
 int symbol1,symbol2;
