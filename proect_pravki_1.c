@@ -169,12 +169,12 @@ if (FLAG==1){
   }
 
   if ((sum_of_similar_files/sum1*100)<95)
-  {   printf("\n ++ %lf %lf %lf \n",sum2,sum1,sum_of_similar_files);
+  {   
       printf("\nDirectories aren`t similar \n");
       return 0;
   }
   else
-  {  printf("\n ++ %lf %lf %lf \n",sum2,sum1,sum_of_similar_files);
+  { 
      printf("\nDirectories are similar \n");
      return 0;
   }
@@ -189,7 +189,7 @@ else
   size_of_similar_files=0;
 
   if ((size_sum2/size_sum1*100)<95)
-  {   printf("\n + %lf %lf \n",size_sum2,size_sum1);
+  {   
       printf("\nDirectories aren`t similar \n");
       return 0;
   }
@@ -210,12 +210,12 @@ else
     }
 
   if ((size_of_similar_files/size_sum1*100)<95)
-  {   printf("\n ++ %lf %lf %lf \n",size_sum2,size_sum1,size_of_similar_files);
+  {   
       printf("\nDirectories aren`t similar \n");
       return 0;
   }
   else
-  {  printf("\n ++ %lf %lf %lf \n",size_sum2,size_sum1,size_of_similar_files);
+  {  
      printf("\nDirectories are similar \n");
      return 0;
   }
