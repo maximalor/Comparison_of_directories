@@ -110,9 +110,11 @@ scanf("%d",&FLAG);
 
 printf("\n Vvedite pervuju directoriju:\n ");
 scanf("%s",d_name_1);
+strcat(d_name_1,"\\"); 
 
 printf("\n Vvedite vtoruju directoriju:\n ");
 scanf("%s",d_name_2);
+strcat(d_name_2,"\\"); 
 
 if (((direct_1=opendir(d_name_1))!=NULL)&&((direct_2=opendir(d_name_2))!=NULL))
 {
